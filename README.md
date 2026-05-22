@@ -1,5 +1,5 @@
 
-ibd2sql.php — convert a MySQL 8.x datadir (.ibd/ibdata1/mysql.ibd) into per-database .sql dumps for SQL data recovery
+ibd2sql.php - convert a MySQL 8.x datadir (.ibd/ibdata1/mysql.ibd) into per-database .sql dumps for SQL data recovery
 ##
 How it works: copy datadir to a scratch location, boot a private mysqld on it with --skip-grant-tables,
 mysqldump every user database, shut down, optionally clean up.
